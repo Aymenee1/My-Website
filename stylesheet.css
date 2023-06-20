@@ -1,0 +1,307 @@
+:root{
+    --primarycolor: #30BB67;
+    --secondarycolor: #00240E;
+    --bgcolor: #FFFDF7;
+    --padding: 8%;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #00240E;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    
+}
+span{
+    color: #30BB67;
+}
+
+h2{
+    font-size: 2.2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+nav{
+    padding-top: 2.8rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0.8rem 1.5rem;
+    font-size: 1.5rem;
+    
+}
+
+nav ul li a {
+    color: var(--secondarycolor);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: 0.2s;
+
+}
+
+nav ul li a:hover{
+    color: #30BB67;
+    
+}
+
+.btn{
+    background-color: #000000;
+    color: #fffdf7;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.btn:hover{
+    background-color: #10a54c;
+}
+
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+h1{
+    font-size: 4.56rem;
+    margin: 1.7rem 0;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 3.5rem;
+}
+
+h4{
+    font-size: 1.25rem;
+    letter-spacing: 0.12rem;
+}
+
+.Logo{
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+.container-text{
+    position: relative;
+    bottom: 70px;
+
+}
+
+.social{
+    margin-top: 3.5rem;
+}
+
+.social img{
+    margin-right: 2rem;
+    width: 2.5rem;
+}
+.social img:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.home .container-images{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+    right: 100px;
+
+}
+
+.home .container-images img{
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 50;
+    transition: bottom 1s, left 1s;
+}
+.home .container-images:hover .shape{
+    bottom: 40px;
+    
+}
+.home .container-images:hover .me{
+    left: 40px;
+    transition-duration: 1s;
+}
+.about{
+    background-color:#FFFDF7;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.about .container-images{
+    width: 35%;
+}
+.about .container-images img{
+    width: 90%;
+}
+
+.qoute1{
+    animation: qoute1Move 20s linear ;   
+    animation-delay:0s ;
+    float: left;
+}
+.qoute2{
+    animation: qoute2Move 20s linear;   
+    animation-delay:10s ;
+    float: left;
+}
+.qoute3{
+    animation: qoute3Move 20s linear;   
+    animation-delay:20s ;
+    float: left;
+}
+.qoute4{
+    animation: qoute4Move 20s linear;   
+    animation-delay:30s ;
+    float: left;
+}
+.qoute5{
+    animation: qoute5Move 20s linear;  
+    animation-delay:40s ; 
+    float: left;
+}
+
+.general-quote {
+    position: absolute;
+    font-size: 1.5rem;
+    transition-duration: 2s;
+}
+
+
+.quote-right {
+    top:50%;
+    right: 10%;
+    transform: translate(50%, -50%);
+    transition-duration: 0s;
+}
+
+
+.quote-center {
+    top: 50%; 
+    left: 50%;
+    transform: translate(50%, -50%);
+    transition-duration: 2s;
+}
+
+.quote-left {
+    top:50%;
+    left: 10%;
+    transform: translate(50%, -50%);
+}
+
+.container-qoutes{
+    overflow: hidden;
+    height: 200px;
+    background-color: #30BB67;
+}
+
+.quote-interior-container {
+    position: relative;
+    height: inherit;
+    height: 200px;
+    width: auto;
+}
+
+@keyframes qoute1Move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+}
+@keyframes qoute2Move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+}
+@keyframes qoute3Move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+}
+@keyframes qoute4Move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+}
+@keyframes qoute5Move {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+        
+    }
+}
+.about .container-text{
+    width: 35%;
+    bottom: 30px;
+    right: 50px;
+
+}
+
+.name :hover{
+    letter-spacing: 3px;
+}
+.name{
+    transition: 2s;
+}
+
+.mainabout{
+    font-size: 1.2rem;
+}
+#contactme{
+    font-weight: bold;
+}
+
